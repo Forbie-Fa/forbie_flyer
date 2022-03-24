@@ -1,0 +1,121 @@
+:root {
+    --forbie-brown: #c37649;
+    --forbie-blue: #2e6ea0;
+}
+
+@font-face {
+    font-family: 'Artegra Soft';
+    src: local('Artegra Soft Medium'), local('Artegra-Soft-Medium'),
+    url('ArtegraSoft-Medium.woff2') format('woff2'),
+    url('ArtegraSoft-Medium.woff') format('woff'),
+    url('ArtegraSoft-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Artegra Soft', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: rgb(173,101,58);
+    background: linear-gradient(0deg, rgba(173,101,58,1) 50%, rgba(173,101,58,0.5) 100%);
+    border-bottom-left-radius: 2000px;
+    border-bottom-right-radius: 2000px;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 60px 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .container .header-element {
+
+}
+
+.left-element {
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.right-element {
+    justify-content: center;
+    padding-right: 40px;
+    width: 340px;
+}
+
+.header .container .header-element .header-text {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+.phone {
+    height: 240px;
+}
+
+.blue-text {
+    color: var(--forbie-blue)
+}
+
+.flyer-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.column-left .header-container {
+    width: 390px;
+    text-align: center;
+}
+
+.column-left .header-container .title {
+    margin: 0;
+}
+
+.column-left .header-container .content {
+    margin: 0;
+}
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.column-right h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.column-right ul li {
+    font-size: 20px;
+    margin: 0;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(33%) sepia(73%) saturate(481%) hue-rotate(163deg) brightness(101%) contrast(88%);
+}
+
+.icon-frame {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: var(--forbie-brown);
+}
